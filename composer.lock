@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "052fc63c55f0320347a7ee267b2606be",
-    "content-hash": "9f3b931cf9fb3cc48551db19677088c2",
+    "content-hash": "838f4c28de54c46348a439a86505b513",
     "packages": [
         {
             "name": "pimple/pimple",
@@ -51,7 +50,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2015-09-11 15:10:35"
+            "time": "2015-09-11T15:10:35+00:00"
         },
         {
             "name": "psr/log",
@@ -98,34 +97,34 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "robrichards/xmlseclibs",
-            "version": "1.4.2",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/robrichards/xmlseclibs.git",
-                "reference": "79fb5e03c4ee4dc3ec77e4b2628231374364a017"
+                "reference": "118450a141ac2336be1b5e5e91a22229441b0277"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/79fb5e03c4ee4dc3ec77e4b2628231374364a017",
-                "reference": "79fb5e03c4ee4dc3ec77e4b2628231374364a017",
+                "url": "https://api.github.com/repos/robrichards/xmlseclibs/zipball/118450a141ac2336be1b5e5e91a22229441b0277",
+                "reference": "118450a141ac2336be1b5e5e91a22229441b0277",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 5.2"
+                "php": ">= 5.3"
             },
             "suggest": {
-                "ext/mcrypt": "MCrypt extension",
-                "ext/openssl": "OpenSSL extension"
+                "ext-mcrypt": "MCrypt extension",
+                "ext-openssl": "OpenSSL extension"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "src/"
-                ]
+                "psr-4": {
+                    "RobRichards\\XMLSecLibs\\": "src"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -139,7 +138,11 @@
                 "xml",
                 "xmldsig"
             ],
-            "time": "2016-09-08 13:31:44"
+            "support": {
+                "issues": "https://github.com/robrichards/xmlseclibs/issues",
+                "source": "https://github.com/robrichards/xmlseclibs/tree/2.1.1"
+            },
+            "time": "2019-11-05T11:51:00+00:00"
         },
         {
             "name": "silex/silex",
@@ -224,7 +227,7 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2016-11-06 18:09:06"
+            "time": "2016-11-06T18:09:06+00:00"
         },
         {
             "name": "symfony/debug",
@@ -281,7 +284,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-18 17:28:00"
+            "time": "2017-02-18T17:28:00+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -341,7 +344,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-21 09:12:04"
+            "time": "2017-02-21T09:12:04+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -394,7 +397,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2017-03-04 12:23:14"
+            "time": "2017-03-04T12:23:14+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -476,7 +479,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2017-03-10 18:35:31"
+            "time": "2017-03-10T18:35:31+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -535,7 +538,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2016-11-14 01:06:16"
+            "time": "2016-11-14T01:06:16+00:00"
         },
         {
             "name": "symfony/routing",
@@ -610,7 +613,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2017-03-02 15:58:09"
+            "time": "2017-03-02T15:58:09+00:00"
         },
         {
             "name": "twig/twig",
@@ -672,7 +675,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-03-22 15:40:09"
+            "time": "2017-03-22T15:40:09+00:00"
         }
     ],
     "packages-dev": [],
@@ -682,5 +685,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
 }
